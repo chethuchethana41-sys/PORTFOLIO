@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chethana C K Portfolio</title>
+<title>Chethana C K | Data Analyst</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/4e3f9f2a1f.js" crossorigin="anonymous"></script>
 
 <style>
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
     color: white;
     text-align: center;
 }
 
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
 header {
-    padding: 80px 20px;
+    padding: 100px 20px 60px;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 .typing {
-    font-size: 20px;
+    font-size: 22px;
     color: #00f2ff;
+    height: 30px;
 }
 
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
     padding: 20px;
 }
 
 .card {
     background: rgba(255,255,255,0.1);
-    padding: 25px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.05);
     background: rgba(255,255,255,0.2);
 }
 
@@ -61,15 +73,16 @@ a {
     text-decoration: none;
     color: #00f2ff;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .social-icons {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .social-icons a {
-    margin: 0 15px;
-    font-size: 28px;
+    margin: 0 20px;
+    font-size: 18px;
     color: white;
     transition: 0.3s;
 }
@@ -79,7 +92,7 @@ a {
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 20px;
     background: rgba(0,0,0,0.4);
 }
@@ -93,15 +106,9 @@ footer {
 <div class="typing" id="typing"></div>
 
 <div class="social-icons">
-<a href="https://www.linkedin.com/in/chethana-ck-374429380" target="_blank">
-<i class="fab fa-linkedin"></i>
-</a>
-
-<a href="https://github.com/chethuchethana41-sys" target="_blank">
-<i class="fab fa-github"></i>
-</a>
+<a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+<a href="https://github.com/chethuchethana41-sys" target="_blank">GitHub</a>
 </div>
-
 </header>
 
 <div class="section">
@@ -109,6 +116,10 @@ footer {
 
 <div class="grid">
 
+<div class="card">
+<h3>IBM Certificate</h3>
+<a href="ibm.pdf" target="_blank">View Certificate</a>
+</div>
 
 <div class="card">
 <h3>NASSCOM Certificate</h3>
@@ -116,12 +127,17 @@ footer {
 </div>
 
 <div class="card">
-<h3>Internship Certificate</h3>
-<a href="internship excelr.pdf" target="_blank">View Certificate</a>
+<h3>PySpark Certificate</h3>
+<a href="pyspark certificate.pdf" target="_blank">View Certificate</a>
 </div>
 
 <div class="card">
-<h3>Deloitte Certificate</h3>
+<h3>Internship Certificate</h3>
+<a href="internship 2.pdf" target="_blank">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>Deloitte Completion Certificate</h3>
 <a href="deloitte_completion_certificate.pdf" target="_blank">View Certificate</a>
 </div>
 
@@ -130,29 +146,22 @@ footer {
 <a href="Chetana C K course certificate.pdf" target="_blank">View Certificate</a>
 </div>
 
-<div class="card">
-<h3>IBM Certificate</h3>
-<a href="ibm.pdf" target="_blank">View Certificate</a>
 </div>
 </div>
-</div>
-<div class="card">
-<h3>PySpark Certificate</h3>
-<a href="pyspark certificate.pdf" target="_blank">View Certificate</a>
-</div>
+
 <footer>
-© 2026 Chethana C K| Data Analyst Portfolio
+© 2026 Chetana C K | Data Analyst Portfolio
 </footer>
 
 <script>
-const text = "Data Analyst | SQL | Python | Power BI | Excel";
+const text = "Data Analyst | SQL | Python | Power BI | Excel | Turning Data into Insights";
 let i = 0;
 
 function typingEffect() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typingEffect, 70);
+    setTimeout(typingEffect, 60);
   }
 }
 
