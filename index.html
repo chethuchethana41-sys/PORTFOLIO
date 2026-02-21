@@ -1,108 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chethana Portfolio</title>
+<title>Chetana Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+    text-align: center;
 }
 
-section {
-  padding: 100px 20px;
+header {
+    padding: 60px 20px;
 }
 
-button {
-  padding: 12px 25px;
-  margin: 10px;
-  border: none;
-  background: #00adb5;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-button:hover {
-  background: #028f94;
+h2 {
+    margin-top: 50px;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
+.section {
+    padding: 40px 20px;
 }
 
-.modal-content {
-  background: #222;
-  margin: 10% auto;
-  padding: 30px;
-  width: 60%;
-  border-radius: 10px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.close {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #00f2ff;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
 }
 </style>
 
 </head>
 <body>
 
-<section>
-<h1>Hi, I am Chethana 👋</h1>
-<p>Data Analyst | Power BI | SQL | Excel</p>
-<button onclick="scrollToSection('projects')">View Projects</button>
-</section>
+<header>
+<h1>Hi, I am Chetana 👋</h1>
+<p>Data Analyst | SQL | Python | Power BI | Excel</p>
+</header>
 
-<section id="projects">
+<div class="section">
 <h2>My Projects</h2>
 
-<button onclick="openModal()">Sales Dashboard</button>
-
-<div id="projectModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h3>Sales Dashboard</h3>
-    <p>Power BI dashboard analyzing revenue, profit and KPIs.</p>
-  </div>
+<div class="grid">
+<div class="card">
+<h3>Sales Dashboard</h3>
+<p>Power BI dashboard analyzing KPIs and revenue trends.</p>
 </div>
 
-</section>
+<div class="card">
+<h3>CRM Analytics</h3>
+<p>Analyzed 1M+ records using SQL & Python.</p>
+</div>
 
-<section>
+<div class="card">
+<h3>Adventure Works Report</h3>
+<p>Business insights with 15+ KPIs.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>My Certificates</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>IBM Certificate</h3>
+<a href="ibm.pdf" target="_blank">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>NASSCOM Certificate</h3>
+<a href="nasscom.pdf" target="_blank">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>PySpark Certificate</h3>
+<a href="pyspark certificate.pdf" target="_blank">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>Internship Certificate</h3>
+<a href="internship excelr.pdf" target="_blank">View Certificate</a>
+</div>
+
+</div>
+</div>
+
+<div class="section">
 <h2>Contact</h2>
-<p>
-<a href="mailto:chethuchethana41@gmail.com" style="color:#00adb5;">
-chethuchethana41@gmail.com
-</a>
-</p>
-</section>
+<p>Email: chethuchethana41@gmail.com</p>
+</div>
 
-<script>
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({behavior: "smooth"});
-}
-
-function openModal() {
-  document.getElementById("projectModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("projectModal").style.display = "none";
-}
-</script>
+<footer>
+© 2026 Chetana | Data Analyst Portfolio
+</footer>
 
 </body>
 </html>
