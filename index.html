@@ -1,26 +1,108 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Chethana Portfolio</title>
-</head>
-<body style="font-family: Arial; text-align: center; background-color: black; color: white;">
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  background: #00adb5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #028f94;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background: #222;
+  margin: 10% auto;
+  padding: 30px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<section>
 <h1>Hi, I am Chethana 👋</h1>
 <p>Data Analyst | Power BI | SQL | Excel</p>
+<button onclick="scrollToSection('projects')">View Projects</button>
+</section>
 
+<section id="projects">
 <h2>My Projects</h2>
 
-<button onclick="document.getElementById('project1').style.display='block'">
-Sales Dashboard
-</button>
+<button onclick="openModal()">Sales Dashboard</button>
 
-<div id="project1" style="display:none; margin-top:20px;">
-<p>This project analyzes sales data using Power BI.</p>
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Sales Dashboard</h3>
+    <p>Power BI dashboard analyzing revenue, profit and KPIs.</p>
+  </div>
 </div>
 
+</section>
+
+<section>
 <h2>Contact</h2>
-<p>Email: yourmail@gmail.com</p>
+<p>
+<a href="mailto:chethuchethana41@gmail.com" style="color:#00adb5;">
+chethuchethana41@gmail.com
+</a>
+</p>
+</section>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({behavior: "smooth"});
+}
+
+function openModal() {
+  document.getElementById("projectModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("projectModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
