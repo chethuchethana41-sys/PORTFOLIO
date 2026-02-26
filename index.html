@@ -27,16 +27,15 @@ color: white;
 100%{background-position:0% 50%;}
 }
 
-/* NAVBAR */
-
 nav {
 position: fixed;
 top: 0;
 width: 100%;
-background: rgba(0,0,0,0.5);
+background: rgba(0,0,0,0.6);
 backdrop-filter: blur(10px);
 padding: 15px;
 z-index: 1000;
+text-align:center;
 }
 
 nav a {
@@ -49,8 +48,6 @@ font-weight: 500;
 nav a:hover {
 color: #00f2ff;
 }
-
-/* HEADER */
 
 header {
 padding: 140px 20px 80px;
@@ -69,8 +66,6 @@ margin-top: 10px;
 height: 30px;
 }
 
-/* SECTIONS */
-
 .section {
 padding: 80px 20px;
 max-width: 1200px;
@@ -82,15 +77,11 @@ margin-bottom: 30px;
 font-size: 32px;
 }
 
-/* GRID */
-
 .grid {
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 gap: 30px;
 }
-
-/* CARD */
 
 .card {
 background: rgba(255,255,255,0.1);
@@ -119,8 +110,6 @@ border-radius: 10px;
 margin-bottom: 15px;
 }
 
-/* LINKS */
-
 .btn {
 display: inline-block;
 margin-top: 10px;
@@ -129,7 +118,9 @@ text-decoration: none;
 font-weight: 600;
 }
 
-/* SOCIAL */
+.btn:hover{
+color:white;
+}
 
 .social {
 margin-top: 20px;
@@ -139,13 +130,12 @@ margin-top: 20px;
 margin: 10px;
 color: white;
 text-decoration: none;
+font-weight:600;
 }
 
 .social a:hover {
 color: #00f2ff;
 }
-
-/* FOOTER */
 
 footer {
 text-align: center;
@@ -163,6 +153,7 @@ margin-top: 50px;
 <a href="#">Home</a>
 <a href="#projects">Projects</a>
 <a href="#certificates">Certificates</a>
+<a href="projects/adventureworks/index.html">Featured Project</a>
 <a href="https://github.com/chethuchethana41-sys" target="_blank">GitHub</a>
 <a href="https://www.linkedin.com/in/chethana-ck-374429380" target="_blank">LinkedIn</a>
 </nav>
@@ -174,13 +165,11 @@ margin-top: 50px;
 <div class="typing" id="typing"></div>
 
 <div class="social">
-<a href="projects/adventureworks/index.html">View Featured Project</a>
+<a href="projects/adventureworks/index.html" class="btn">View Featured Project →</a>
 </div>
 
 </header>
 
-
-<!-- PROJECT SECTION -->
 
 <div class="section" id="projects">
 
@@ -190,16 +179,16 @@ margin-top: 50px;
 
 <div class="card">
 
-<img src="projects/adventureworks/Dashboard overview1.png">
+<img src="projects/adventureworks/dashboard.jpeg">
 
 <h3>AdventureWorks Sales Dashboard</h3>
 
 <p>
-Interactive Power BI dashboard analyzing sales trends, customer insights, and business KPIs to support data-driven decision making.
+Built an interactive business intelligence dashboard using Excel and Power Query to analyze sales performance, track KPIs, identify revenue trends, and generate actionable insights for data-driven decision making.
 </p>
 
 <a href="projects/adventureworks/index.html" class="btn">
-View Project →
+View Full Project →
 </a>
 
 </div>
@@ -209,9 +198,6 @@ View Project →
 </div>
 
 
-
-<!-- CERTIFICATES -->
-
 <div class="section" id="certificates">
 
 <h2>Certificates</h2>
@@ -220,38 +206,37 @@ View Project →
 
 <div class="card">
 <h3>NASSCOM Certificate</h3>
-<a href="nasscom.pdf" class="btn">View</a>
+<a href="nasscom.pdf" class="btn">View Certificate →</a>
 </div>
 
 <div class="card">
 <h3>PySpark Certificate</h3>
-<a href="pyspark certificate.pdf" class="btn">View</a>
+<a href="pyspark certificate.pdf" class="btn">View Certificate →</a>
 </div>
 
 <div class="card">
 <h3>Internship Certificate</h3>
-<a href="internship 2.pdf" class="btn">View</a>
+<a href="internship 2.pdf" class="btn">View Certificate →</a>
 </div>
 
 <div class="card">
 <h3>Deloitte Certificate</h3>
-<a href="deliotte_completion_certificate.pdf" class="btn">View</a>
+<a href="deliotte_completion_certificate.pdf" class="btn">View Certificate →</a>
 </div>
 
 <div class="card">
 <h3>IBM Certificate</h3>
-<a href="ibm.pdf" class="btn">View</a>
+<a href="ibm.pdf" class="btn">View Certificate →</a>
 </div>
 
 <div class="card">
 <h3>Course Certificate</h3>
-<a href="Chethana C K course certificate.pdf" class="btn">View</a>
+<a href="Chethana C K course certificate.pdf" class="btn">View Certificate →</a>
 </div>
 
 </div>
 
 </div>
-
 
 
 <footer>
@@ -263,31 +248,20 @@ View Project →
 
 <script>
 
-/* typing effect */
-
 const text =
-"Data Analyst | SQL | Python | Power BI | Excel | Data Visualization";
+"Data Analyst | SQL | Python | Power BI | Excel | Data Visualization | Turning Data into Business Insights";
 
 let i = 0;
 
 function typing() {
-
 if(i < text.length){
-
 document.getElementById("typing").innerHTML += text.charAt(i);
-
 i++;
-
 setTimeout(typing,50);
-
 }
-
 }
 
 typing();
-
-
-/* scroll animation */
 
 const cards = document.querySelectorAll(".card");
 
@@ -298,9 +272,7 @@ cards.forEach(card => {
 const rect = card.getBoundingClientRect();
 
 if(rect.top < window.innerHeight - 100){
-
 card.classList.add("show");
-
 }
 
 });
