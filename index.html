@@ -1,171 +1,312 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chethana C K | Data Analyst</title>
+<title>Chethana C K | Data Analyst Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+html {
+scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
-    background-size: 400% 400%;
-    animation: gradientBG 12s ease infinite;
-    color: white;
-    text-align: center;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+background-size: 400% 400%;
+animation: gradientBG 15s ease infinite;
+color: white;
 }
 
 @keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
+
+/* NAVBAR */
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(10px);
+padding: 15px;
+z-index: 1000;
+}
+
+nav a {
+margin: 0 20px;
+color: white;
+text-decoration: none;
+font-weight: 500;
+}
+
+nav a:hover {
+color: #00f2ff;
+}
+
+/* HEADER */
 
 header {
-    padding: 100px 20px 60px;
-    animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(-20px);}
-    to {opacity: 1; transform: translateY(0);}
+padding: 140px 20px 80px;
+text-align: center;
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+font-size: 50px;
+margin: 0;
 }
 
 .typing {
-    font-size: 22px;
-    color: #00f2ff;
-    height: 30px;
+font-size: 22px;
+color: #00f2ff;
+margin-top: 10px;
+height: 30px;
 }
+
+/* SECTIONS */
 
 .section {
-    padding: 60px 20px;
+padding: 80px 20px;
+max-width: 1200px;
+margin: auto;
 }
+
+.section h2 {
+margin-bottom: 30px;
+font-size: 32px;
+}
+
+/* GRID */
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+gap: 30px;
 }
 
+/* CARD */
+
 .card {
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(12px);
-    transition: 0.4s;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+background: rgba(255,255,255,0.1);
+padding: 25px;
+border-radius: 15px;
+backdrop-filter: blur(10px);
+transition: 0.4s;
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+opacity: 0;
+transform: translateY(40px);
+}
+
+.card.show {
+opacity: 1;
+transform: translateY(0);
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.05);
-    background: rgba(255,255,255,0.2);
+transform: scale(1.05);
+background: rgba(255,255,255,0.2);
 }
 
-a {
-    text-decoration: none;
-    color: #00f2ff;
-    font-weight: bold;
-    font-size: 16px;
+.card img {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 15px;
 }
 
-.social-icons {
-    margin-top: 25px;
+/* LINKS */
+
+.btn {
+display: inline-block;
+margin-top: 10px;
+color: #00f2ff;
+text-decoration: none;
+font-weight: 600;
 }
 
-.social-icons a {
-    margin: 0 20px;
-    font-size: 18px;
-    color: white;
-    transition: 0.3s;
+/* SOCIAL */
+
+.social {
+margin-top: 20px;
 }
 
-.social-icons a:hover {
-    color: #00f2ff;
+.social a {
+margin: 10px;
+color: white;
+text-decoration: none;
 }
+
+.social a:hover {
+color: #00f2ff;
+}
+
+/* FOOTER */
 
 footer {
-    margin-top: 60px;
-    padding: 20px;
-    background: rgba(0,0,0,0.4);
+text-align: center;
+padding: 30px;
+background: rgba(0,0,0,0.5);
+margin-top: 50px;
 }
+
 </style>
 </head>
 
 <body>
 
+<nav>
+<a href="#">Home</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="https://github.com/chethuchethana41-sys" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/chethana-ck-374429380" target="_blank">LinkedIn</a>
+</nav>
+
 <header>
-<h1>Hi, I'm Chethana C K 👋</h1>
+
+<h1>Chethana C K</h1>
+
 <div class="typing" id="typing"></div>
 
-<div class="social-icons">
-<a href="https://www.linkedin.com/in/chethana-ck-374429380" target="_blank">LinkedIn</a>
-<a href="https://github.com/chethuchethana41-sys" target="_blank">GitHub</a>
+<div class="social">
+<a href="projects/adventureworks/index.html">View Featured Project</a>
 </div>
+
 </header>
 
-<div class="section">
-<h2>My Certificates</h2>
+
+<!-- PROJECT SECTION -->
+
+<div class="section" id="projects">
+
+<h2>Featured Projects</h2>
 
 <div class="grid">
 
+<div class="card">
+
+<img src="projects/adventureworks/Dashboard overview1.png">
+
+<h3>AdventureWorks Sales Dashboard</h3>
+
+<p>
+Interactive Power BI dashboard analyzing sales trends, customer insights, and business KPIs to support data-driven decision making.
+</p>
+
+<a href="projects/adventureworks/index.html" class="btn">
+View Project →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CERTIFICATES -->
+
+<div class="section" id="certificates">
+
+<h2>Certificates</h2>
+
+<div class="grid">
 
 <div class="card">
 <h3>NASSCOM Certificate</h3>
-<a href="nasscom.pdf" target="_blank">View Certificate</a>
+<a href="nasscom.pdf" class="btn">View</a>
 </div>
 
 <div class="card">
 <h3>PySpark Certificate</h3>
-<a href="pyspark certificate.pdf" target="_blank">View Certificate</a>
+<a href="pyspark certificate.pdf" class="btn">View</a>
 </div>
 
 <div class="card">
 <h3>Internship Certificate</h3>
-<a href="internship 2.pdf" target="_blank">View Certificate</a>
+<a href="internship 2.pdf" class="btn">View</a>
 </div>
 
 <div class="card">
-<h3>Deliotte Completion Certificate</h3>
-<a href="deliotte_completion_certificate.pdf" target="_blank">View Certificate</a>
+<h3>Deloitte Certificate</h3>
+<a href="deliotte_completion_certificate.pdf" class="btn">View</a>
 </div>
 
 <div class="card">
 <h3>IBM Certificate</h3>
-<a href="ibm.pdf" target="_blank">View Certificate</a>
+<a href="ibm.pdf" class="btn">View</a>
 </div>
+
 <div class="card">
-<h3>Course Completion Certificate</h3>
-<a href="Chethana C K course certificate.pdf" target="_blank">View Certificate</a>
+<h3>Course Certificate</h3>
+<a href="Chethana C K course certificate.pdf" class="btn">View</a>
 </div>
 
 </div>
+
 </div>
+
+
 
 <footer>
+
 © 2026 Chethana C K | Data Analyst Portfolio
+
 </footer>
 
+
 <script>
-const text = "Data Analyst | SQL | Python | Power BI | Excel | Turning Data into Insights";
+
+/* typing effect */
+
+const text =
+"Data Analyst | SQL | Python | Power BI | Excel | Data Visualization";
+
 let i = 0;
 
-function typingEffect() {
-  if (i < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typingEffect, 60);
-  }
+function typing() {
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing,50);
+
 }
 
-typingEffect();
+}
+
+typing();
+
+
+/* scroll animation */
+
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+
+cards.forEach(card => {
+
+const rect = card.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 100){
+
+card.classList.add("show");
+
+}
+
+});
+
+});
+
 </script>
 
 </body>
