@@ -1,211 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>AdventureWorks Sales Dashboard | Chethana C K</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+body {
 margin:0;
 font-family:Poppins;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
 color:white;
 }
 
-header{
-padding:80px 20px;
-text-align:center;
-animation:fadeIn 1.5s ease;
+@keyframes bg {
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(-20px);}
-to{opacity:1;transform:translateY(0);}
-}
-
-h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.subtitle{
-color:#00eaff;
-font-size:18px;
-}
-
-.container{
+.container {
 max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:40px;
 }
 
-.section{
-margin-bottom:50px;
-animation:fadeIn 2s ease;
+h1 {
+font-size:42px;
 }
 
-.card{
-background:rgba(255,255,255,0.08);
-padding:25px;
-border-radius:15px;
-backdrop-filter:blur(10px);
-transition:0.3s;
+h2 {
+margin-top:50px;
+color:#00e5ff;
 }
 
-.card:hover{
-transform:translateY(-5px);
-background:rgba(255,255,255,0.15);
+p {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
 }
 
-img{
-width:100%;
-border-radius:12px;
-margin-top:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-}
-
-.button{
+.button {
 display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#00eaff;
+padding:14px 30px;
+margin:10px;
+background:#00e5ff;
 color:black;
-border-radius:25px;
 text-decoration:none;
+border-radius:30px;
 font-weight:600;
 transition:0.3s;
 }
 
-.button:hover{
+.button:hover {
 background:white;
 transform:scale(1.05);
 }
 
-footer{
+.card {
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+animation:fade 1.5s;
+}
+
+@keyframes fade {
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+img {
+width:100%;
+margin-top:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+img:hover {
+transform:scale(1.02);
+}
+
+footer {
 text-align:center;
 padding:30px;
-margin-top:40px;
+margin-top:50px;
 background:rgba(0,0,0,0.4);
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
 <h1>AdventureWorks Sales Dashboard</h1>
 
-<div class="subtitle">
-Interactive Business Intelligence Dashboard using Excel
-</div>
+<a class="button" href="https://chethuchethana41-sys.github.io/PORTFOLIO/" target="_blank">Portfolio Home</a>
 
-<a href="https://github.com/chethuchethana41-sys" class="button">View GitHub Profile</a>
+<a class="button" href="https://github.com/chethuchethana41-sys" target="_blank">GitHub Profile</a>
 
-</header>
-
-
-<div class="container">
-
-
-<div class="section">
 <div class="card">
 
 <h2>Project Overview</h2>
 
 <p>
-This project focuses on analyzing AdventureWorks sales data and transforming raw transactional information into meaningful business insights through an interactive Excel dashboard.
+This project focuses on analyzing AdventureWorks sales data and transforming raw transactional data into meaningful business insights using Microsoft Excel and Power Query. The goal was to simulate a real-world business intelligence scenario where decision-makers rely on dashboards to monitor performance, identify trends, and make strategic decisions.
 </p>
 
 <p>
-The dashboard enables business users, analysts, and decision-makers to monitor sales performance, identify trends, evaluate product performance, and understand customer behavior using clear visualizations and KPI indicators.
+The dashboard provides a centralized and interactive interface to monitor sales KPIs, product performance, regional performance, and overall revenue trends. The project demonstrates strong skills in data cleaning, transformation, KPI calculation, and dashboard design aligned with business reporting standards.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Business Problem</h2>
+
+<p>
+Organizations require clear visibility into their sales performance to identify growth opportunities, optimize product strategy, and improve revenue generation. Raw sales data alone does not provide actionable insights without proper analysis and visualization.
 </p>
 
 <p>
-The objective was to simulate a real-world business intelligence scenario by applying data cleaning, transformation, analysis, and visualization techniques to support data-driven decision-making.
+This dashboard solves that problem by converting raw transactional data into structured KPIs and visual insights, enabling faster and more informed business decisions.
 </p>
 
 </div>
-</div>
 
-
-
-<div class="section">
 <div class="card">
 
 <h2>Dashboard Preview</h2>
 
-<p>
-The dashboard provides a comprehensive overview of sales performance, revenue distribution, and key business metrics. Users can interact with filters to analyze performance across different categories, regions, and time periods.
-</p>
+<img src="dashboard.jpeg">
 
-<img src="dashboard.png">
+<img src="dashboard overview1.png">
+
+<img src="dashboard overview2.png">
 
 </div>
-</div>
 
-
-
-<div class="section">
 <div class="card">
 
-<h2>Business Insights Generated</h2>
+<h2>Key Insights Generated</h2>
 
 <p>
-The analysis identified top-performing products contributing significantly to overall revenue, allowing businesses to prioritize high-value product segments.
+The analysis identified top-performing products contributing significantly to overall revenue, allowing businesses to prioritize high-value product segments and improve sales strategy.
 </p>
 
 <p>
-Regional analysis highlighted variations in sales performance, helping stakeholders identify strong markets and areas requiring strategic improvement.
+Regional sales analysis highlighted strong performing regions and underperforming markets, enabling targeted business improvements and expansion planning.
 </p>
 
 <p>
-Trend analysis revealed seasonal sales patterns, enabling better demand forecasting and inventory planning.
+Trend analysis revealed seasonal sales patterns and revenue fluctuations, helping improve demand forecasting, production planning, and inventory management.
 </p>
 
 <p>
-Customer and product segmentation insights support targeted marketing strategies and optimized sales planning.
+Customer purchasing patterns provided insights into customer behavior, enabling better marketing strategies and customer segmentation.
 </p>
 
 </div>
-</div>
 
-
-
-<div class="section">
 <div class="card">
 
 <h2>Tools and Technologies Used</h2>
 
 <p>
-Microsoft Excel for dashboard development and visualization
-</p>
-
-<p>
-Power Query for data cleaning, transformation, and preparation
-</p>
-
-<p>
-Data analysis techniques for KPI calculation and performance evaluation
-</p>
-
-<p>
-Business Intelligence principles for dashboard design and insight generation
+Microsoft Excel was used for dashboard development and visualization. Power Query was used for data cleaning, transformation, and preparation. Business intelligence and data analysis techniques were applied to generate KPIs and actionable insights.
 </p>
 
 </div>
+
+<div class="card">
+
+<h2>Project Outcome</h2>
+
+<p>
+Successfully designed a professional business dashboard that converts raw sales data into meaningful insights. This project demonstrates strong analytical skills, dashboard development expertise, and the ability to deliver business-ready analytics solutions.
+</p>
+
 </div>
 
-
-
 </div>
-
 
 <footer>
 
@@ -213,6 +200,6 @@ Chethana C K | Data Analyst Portfolio
 
 </footer>
 
-
 </body>
+
 </html>
