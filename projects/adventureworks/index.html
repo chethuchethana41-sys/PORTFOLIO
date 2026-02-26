@@ -1,12 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>AdventureWorks Sales Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AdventureWorks Sales Dashboard | Chethana C K</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+header{
+padding:80px 20px;
+text-align:center;
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(-20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#00eaff;
+font-size:18px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:50px;
+animation:fadeIn 2s ease;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.15);
+}
+
+img{
+width:100%;
+border-radius:12px;
+margin-top:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00eaff;
+color:black;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.button:hover{
+background:white;
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:40px;
+background:rgba(0,0,0,0.4);
+}
+
+</style>
 </head>
+
 <body>
 
+<header>
+
 <h1>AdventureWorks Sales Dashboard</h1>
-<p>Project page is under construction.</p>
+
+<div class="subtitle">
+Interactive Business Intelligence Dashboard using Excel
+</div>
+
+<a href="https://github.com/chethuchethana41-sys" class="button">View GitHub Profile</a>
+
+</header>
+
+
+<div class="container">
+
+
+<div class="section">
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p>
+This project focuses on analyzing AdventureWorks sales data and transforming raw transactional information into meaningful business insights through an interactive Excel dashboard.
+</p>
+
+<p>
+The dashboard enables business users, analysts, and decision-makers to monitor sales performance, identify trends, evaluate product performance, and understand customer behavior using clear visualizations and KPI indicators.
+</p>
+
+<p>
+The objective was to simulate a real-world business intelligence scenario by applying data cleaning, transformation, analysis, and visualization techniques to support data-driven decision-making.
+</p>
+
+</div>
+</div>
+
+
+
+<div class="section">
+<div class="card">
+
+<h2>Dashboard Preview</h2>
+
+<p>
+The dashboard provides a comprehensive overview of sales performance, revenue distribution, and key business metrics. Users can interact with filters to analyze performance across different categories, regions, and time periods.
+</p>
+
+<img src="dashboard.png">
+
+</div>
+</div>
+
+
+
+<div class="section">
+<div class="card">
+
+<h2>Business Insights Generated</h2>
+
+<p>
+The analysis identified top-performing products contributing significantly to overall revenue, allowing businesses to prioritize high-value product segments.
+</p>
+
+<p>
+Regional analysis highlighted variations in sales performance, helping stakeholders identify strong markets and areas requiring strategic improvement.
+</p>
+
+<p>
+Trend analysis revealed seasonal sales patterns, enabling better demand forecasting and inventory planning.
+</p>
+
+<p>
+Customer and product segmentation insights support targeted marketing strategies and optimized sales planning.
+</p>
+
+</div>
+</div>
+
+
+
+<div class="section">
+<div class="card">
+
+<h2>Tools and Technologies Used</h2>
+
+<p>
+Microsoft Excel for dashboard development and visualization
+</p>
+
+<p>
+Power Query for data cleaning, transformation, and preparation
+</p>
+
+<p>
+Data analysis techniques for KPI calculation and performance evaluation
+</p>
+
+<p>
+Business Intelligence principles for dashboard design and insight generation
+</p>
+
+</div>
+</div>
+
+
+
+</div>
+
+
+<footer>
+
+Chethana C K | Data Analyst Portfolio
+
+</footer>
+
 
 </body>
 </html>
