@@ -8,9 +8,7 @@
 
 <style>
 
-html {
-scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
 margin: 0;
@@ -45,19 +43,14 @@ text-decoration: none;
 font-weight: 500;
 }
 
-nav a:hover {
-color: #00f2ff;
-}
+nav a:hover { color: #00f2ff; }
 
 header {
 padding: 140px 20px 80px;
 text-align: center;
 }
 
-h1 {
-font-size: 50px;
-margin: 0;
-}
+h1 { font-size: 50px; margin: 0; }
 
 .typing {
 font-size: 22px;
@@ -108,6 +101,7 @@ background: rgba(255,255,255,0.2);
 width: 100%;
 border-radius: 10px;
 margin-bottom: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
 .btn {
@@ -118,24 +112,9 @@ text-decoration: none;
 font-weight: 600;
 }
 
-.btn:hover{
-color:white;
-}
+.btn:hover { color:white; }
 
-.social {
-margin-top: 20px;
-}
-
-.social a {
-margin: 10px;
-color: white;
-text-decoration: none;
-font-weight:600;
-}
-
-.social a:hover {
-color: #00f2ff;
-}
+.social { margin-top: 20px; }
 
 footer {
 text-align: center;
@@ -159,17 +138,9 @@ margin-top: 50px;
 </nav>
 
 <header>
-
 <h1>Chethana C K</h1>
-
 <div class="typing" id="typing"></div>
-
-<div class="social">
-<a href="projects/adventureworks/index.html" class="btn">View Featured Project →</a>
-</div>
-
 </header>
-
 
 <div class="section" id="projects">
 
@@ -177,14 +148,16 @@ margin-top: 50px;
 
 <div class="grid">
 
+<!-- Adventure Project -->
+
 <div class="card">
 
-<img src="projects/adventureworks/dashboard.jpeg">
+<img src="projects/adventureworks/dashboard.jpeg" alt="Adventure Dashboard">
 
 <h3>AdventureWorks Sales Dashboard</h3>
 
 <p>
-Built an interactive business intelligence dashboard using Excel and Power Query to analyze sales performance, track KPIs, identify revenue trends, and generate actionable insights for data-driven decision making.
+Built an interactive BI dashboard using Excel and Power Query to analyze sales performance, track KPIs, identify revenue trends, and generate actionable business insights.
 </p>
 
 <a href="projects/adventureworks/index.html" class="btn">
@@ -192,26 +165,27 @@ View Full Project →
 </a>
 
 </div>
-  <div class="project-card">
 
-<img src="finance-preview.png" alt="Financial Dashboard Preview">
+<!-- Financial Project (NOW SAME STYLE) -->
+
+<div class="card">
+
+<img src="projects/financial-dashboard/overview1.png" alt="Financial Dashboard">
 
 <h3>Financial Performance Dashboard</h3>
 
 <p>
-Enterprise-level financial analytics dashboard built using Power BI. 
-Designed to analyze 1M+ records and identify revenue concentration, 
-margin erosion, and profitability drivers.
+Enterprise-level financial analytics dashboard built using Power BI to analyze revenue, profitability, cost structures, and financial KPIs across 1M+ records.
 </p>
 
-<a class="button" href="financial-dashboard.html">View Full Project →</a>
+<a href="projects/financial-dashboard/index.html" class="btn">
+View Full Project →
+</a>
 
 </div>
 
 </div>
-
 </div>
-
 
 <div class="section" id="certificates">
 
@@ -250,24 +224,17 @@ margin erosion, and profitability drivers.
 </div>
 
 </div>
-
 </div>
 
-
 <footer>
-
 © 2026 Chethana C K | Data Analyst Portfolio
-
 </footer>
-
 
 <script>
 
-const text =
-"Data Analyst | SQL | Python | Power BI | Excel | Data Visualization | Turning Data into Business Insights";
+const text = "Data Analyst | SQL | Python | Power BI | Excel | Data Visualization | Turning Data into Business Insights";
 
 let i = 0;
-
 function typing() {
 if(i < text.length){
 document.getElementById("typing").innerHTML += text.charAt(i);
@@ -275,23 +242,17 @@ i++;
 setTimeout(typing,50);
 }
 }
-
 typing();
 
 const cards = document.querySelectorAll(".card");
 
 window.addEventListener("scroll", () => {
-
 cards.forEach(card => {
-
 const rect = card.getBoundingClientRect();
-
 if(rect.top < window.innerHeight - 100){
 card.classList.add("show");
 }
-
 });
-
 });
 
 </script>
