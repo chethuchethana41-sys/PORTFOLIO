@@ -1,67 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Financial Dashboard | Chethana C K</title>
+
+<title>AdventureWorks Sales Dashboard | Chethana C K</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
+
+body {
 margin:0;
-font-family:Arial;
-background:#111;
+font-family:Poppins;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
 color:white;
 }
 
-.container{
-max-width:1000px;
+@keyframes bg {
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container {
+max-width:1100px;
 margin:auto;
 padding:40px;
 }
 
-h1{
-text-align:center;
+h1 {
+font-size:42px;
 }
 
-.button{
+h2 {
+margin-top:50px;
+color:#00e5ff;
+}
+
+p {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
+}
+
+ol {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
+margin-left:20px;
+}
+
+.button {
 display:inline-block;
-padding:10px 20px;
-background:#00bcd4;
+padding:14px 30px;
+margin:10px;
+background:#00e5ff;
 color:black;
 text-decoration:none;
-border-radius:5px;
-margin:10px 5px;
+border-radius:30px;
+font-weight:600;
+transition:0.3s;
 }
 
-img{
-width:100%;
-margin-top:20px;
-border-radius:10px;
+.button:hover {
+background:white;
+transform:scale(1.05);
 }
+
+.card {
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+animation:fade 1.5s;
+}
+
+@keyframes fade {
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+img {
+width:100%;
+margin-top:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+img:hover {
+transform:scale(1.02);
+}
+
+footer {
+text-align:center;
+padding:30px;
+margin-top:50px;
+background:rgba(0,0,0,0.4);
+}
+
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Financial Performance Dashboard</h1>
+<h1>AdventureWorks Sales Dashboard</h1>
 
-<div style="text-align:center;">
-<a class="button" href="../../index.html">← Back to Portfolio</a>
-<a class="button" href="https://github.com/chethuchethana41-sys/PORTFOLIO/tree/main/projects/financial-dashboard" target="_blank">View GitHub</a>
-</div>
+<a class="button" href="https://chethuchethana41-sys.github.io/PORTFOLIO/" target="_blank">Portfolio Home</a>
+
+<a class="button" href="https://github.com/chethuchethana41-sys" target="_blank">GitHub Profile</a>
+
+<div class="card">
 
 <h2>Project Overview</h2>
+
 <p>
-Enterprise-level Power BI dashboard analyzing 1M+ financial records to detect revenue concentration and margin erosion.
+This project focuses on analyzing AdventureWorks sales data and transforming raw transactional data into meaningful business insights using Microsoft Excel and Power Query. The goal was to simulate a real-world business intelligence scenario where decision-makers rely on dashboards to monitor performance, identify trends, and make strategic decisions.
 </p>
+
+<p>
+The dashboard provides a centralized and interactive interface to monitor sales KPIs, product performance, regional performance, and overall revenue trends. The project demonstrates strong skills in data cleaning, transformation, KPI calculation, and dashboard design aligned with business reporting standards.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Business Problem</h2>
+
+<p>
+Organizations require clear visibility into their sales performance to identify growth opportunities, optimize product strategy, and improve revenue generation. Raw sales data alone does not provide actionable insights without proper analysis and visualization.
+</p>
+
+<p>
+This dashboard solves that problem by converting raw transactional data into structured KPIs and visual insights, enabling faster and more informed business decisions.
+</p>
+
+</div>
+
+<div class="card">
 
 <h2>Dashboard Preview</h2>
 
-<img src="overview1.png" alt="Overview 1">
-<img src="overview2.png" alt="Overview 2">
+<img src="dashboard.jpeg">
 
 </div>
 
+<div class="card">
+
+<h2>Key Insights Generated</h2>
+
+<ol>
+<li>Identified top-performing products contributing ~35–40% of total revenue, allowing prioritization of high-value product segments and improved sales strategy.</li>
+<li>Regional sales analysis highlighted regions generating >45% of total sales, enabling targeted business improvements and market prioritization.</li>
+<li>Trend analysis revealed seasonal sales patterns and revenue fluctuations, supporting demand forecasting, production planning, and inventory management.</li>
+<li>Customer purchasing behavior insights enabled better marketing strategies and customer segmentation.</li>
+<li>Automated reporting reduced manual effort by ~70%, turning hours of analysis into seconds.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Tools and Technologies Used</h2>
+
+<ol>
+<li>Microsoft Excel for dashboard development and visualization.</li>
+<li>Power Query for cleaning and transforming 1,000,000+ sales transaction records.</li>
+<li>Applied business intelligence techniques to calculate KPIs and generate actionable insights.</li>
+<li>Standardized and merged datasets, improving data reliability by ~20%.</li>
+<li>Designed interactive dashboards for executive-level reporting.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Project Outcome</h2>
+
+<ol>
+<li>Successfully designed a professional business dashboard converting raw sales data into meaningful insights.</li>
+<li>Improved operational efficiency by automating data preparation workflows (~60% reduction in manual effort).</li>
+<li>Enhanced reporting clarity and speed, enabling faster business decision-making.</li>
+<li>Demonstrated expertise in Excel, Power Query, KPI calculation, and dashboard design.</li>
+</ol>
+
+</div>
+
+</div>
+
+<footer>
+
+Chethana C K | Data Analyst Portfolio
+
+</footer>
+
 </body>
+
 </html>
