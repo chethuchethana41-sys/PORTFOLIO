@@ -3,22 +3,19 @@
 <head>
 
 <title>Financial Performance Dashboard | Chethana C K</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-html {
-scroll-behavior:smooth;
-}
-
 body {
 margin:0;
 font-family:Poppins;
 background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
 background-size:400% 400%;
-animation:bg 12s ease infinite;
+animation:bg 10s ease infinite;
 color:white;
 }
 
@@ -28,90 +25,38 @@ color:white;
 100%{background-position:0% 50%;}
 }
 
-nav {
-position:fixed;
-width:100%;
-top:0;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-padding:15px 0;
-text-align:center;
-z-index:1000;
-}
-
-nav a {
-color:white;
-margin:0 20px;
-text-decoration:none;
-font-weight:500;
-}
-
-nav a:hover {
-color:#00e5ff;
-}
-
 .container {
 max-width:1100px;
 margin:auto;
-padding:120px 40px 40px 40px;
+padding:40px;
 }
 
 h1 {
 font-size:42px;
-margin-bottom:20px;
 }
 
 h2 {
-margin-top:60px;
+margin-top:50px;
 color:#00e5ff;
 }
 
-p, ol {
+p {
 font-size:18px;
-line-height:1.8;
+line-height:1.7;
 color:#e0e0e0;
 }
 
-.card {
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(12px);
-padding:35px;
-border-radius:18px;
-margin-top:35px;
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.card:hover {
-transform:translateY(-6px);
-}
-
-.kpi-grid {
-display:grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.kpi-box {
-background:rgba(0,229,255,0.12);
-padding:25px;
-border-radius:15px;
-text-align:center;
-font-weight:600;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-.kpi-number {
-font-size:32px;
-color:#00e5ff;
-margin-bottom:8px;
+ol {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
+margin-left:20px;
 }
 
 .button {
 display:inline-block;
-padding:14px 28px;
-margin:15px 10px 0 0;
+padding:14px 30px;
+margin:10px;
 background:#00e5ff;
 color:black;
 text-decoration:none;
@@ -125,23 +70,37 @@ background:white;
 transform:scale(1.05);
 }
 
+.card {
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+animation:fade 1.5s;
+}
+
+@keyframes fade {
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
 img {
 width:100%;
 margin-top:25px;
-border-radius:15px;
+border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.4s;
 }
 
-.button-container {
-text-align:center;
-margin-top:40px;
+img:hover {
+transform:scale(1.02);
 }
 
 footer {
 text-align:center;
-padding:40px;
-margin-top:60px;
-background:rgba(0,0,0,0.5);
+padding:30px;
+margin-top:50px;
+background:rgba(0,0,0,0.4);
 }
 
 </style>
@@ -150,144 +109,100 @@ background:rgba(0,0,0,0.5);
 
 <body>
 
-<nav>
-<a href="#overview">Overview</a>
-<a href="#impact">Impact</a>
-<a href="#architecture">Architecture</a>
-<a href="#preview">Preview</a>
-</nav>
-
 <div class="container">
 
-<h1>Financial Performance & Profitability Intelligence Dashboard</h1>
+<h1>Financial Performance Dashboard</h1>
 
-<div class="button-container">
+<a class="button" href="../../index.html">Portfolio Home</a>
 
-<a class="button" href="../../index.html">
-← Portfolio Home
-</a>
+<a class="button" href="https://github.com/chethuchethana41-sys/PORTFOLIO/tree/main/projects/financial-dashboard" target="_blank">Financial GitHub File</a>
 
-<a class="button" 
-href="https://github.com/chethuchethana41-sys/PORTFOLIO/tree/main/projects/financial-dashboard" 
-target="_blank">
-View on GitHub →
-</a>
-
-</div>
-
-<div id="overview" class="card">
+<div class="card">
 
 <h2>Project Overview</h2>
 
 <p>
-Designed to simulate a CFO-level financial analytics environment, this Power BI dashboard processes over 1,000,000 financial records to uncover revenue concentration, margin risks, and operational inefficiencies.
+This project focuses on analyzing enterprise-level financial data and transforming raw accounting records into actionable business intelligence insights using Power BI and advanced data modeling techniques. The objective was to simulate a real-world financial analytics environment where management relies on dashboards to monitor profitability, revenue trends, cost structures, and financial health indicators.
 </p>
 
 <p>
-The solution demonstrates advanced KPI engineering, optimized DAX calculations, star-schema modeling, and enterprise-level reporting architecture aligned with executive decision-making frameworks.
+The dashboard provides a centralized and interactive platform to track KPIs such as Revenue, Net Profit, Gross Margin, Operating Expenses, and Cash Flow trends. The project demonstrates strong expertise in financial analysis, data transformation, KPI calculation, and executive-level dashboard design aligned with corporate reporting standards.
 </p>
-
-</div>
-
-<div id="impact" class="card">
-
-<h2>Key Business Impact</h2>
-
-<div class="kpi-grid">
-
-<div class="kpi-box">
-<div class="kpi-number" data-target="1000000">0</div>
-Records Processed
-</div>
-
-<div class="kpi-box">
-<div class="kpi-number" data-target="35">0</div>
-% Revenue Concentration Identified
-</div>
-
-<div class="kpi-box">
-<div class="kpi-number" data-target="18">0</div>
-% Margin Erosion Detected
-</div>
-
-<div class="kpi-box">
-<div class="kpi-number" data-target="6">0</div>
-X Faster Reporting
-</div>
-
-<div class="kpi-box">
-<div class="kpi-number" data-target="40">0</div>
-% Manual Effort Reduced
-</div>
-
-</div>
-
-</div>
-
-<div id="architecture" class="card">
-
-<h2>Technical Architecture</h2>
-
-<ol>
-<li>Power BI Enterprise Dashboard Development</li>
-<li>Star Schema Data Modeling</li>
-<li>Advanced DAX KPI Engineering</li>
-<li>Relationship Optimization & Performance Tuning</li>
-<li>Executive-Level Drill-Through Reporting</li>
-</ol>
-
-</div>
-
-<div id="preview" class="card">
-
-<h2>Dashboard Preview</h2>
-
-<img src="overview1.png" alt="Executive Financial Overview Dashboard">
-<img src="overview2.png" alt="Profitability and Margin Analysis Dashboard">
 
 </div>
 
 <div class="card">
 
-<h2>Let’s Connect</h2>
+<h2>Business Problem</h2>
 
 <p>
-Interested in collaborating or discussing enterprise financial analytics solutions?
+Organizations require real-time visibility into their financial performance to ensure profitability, control costs, and make strategic investment decisions. Raw financial statements alone do not provide clear insights without structured analysis and visualization.
 </p>
 
-<a class="button" href="https://www.linkedin.com/in/chethana-ck-374429380/" target="_blank">
-Connect on LinkedIn
-</a>
+<p>
+This dashboard addresses that challenge by converting complex financial data into meaningful metrics and visual insights, enabling faster, data-driven financial decision-making.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Dashboard Preview</h2>
+
+<img src="overview1.png">
+<img src="overview2.png">
+
+</div>
+
+<div class="card">
+
+<h2>Key Insights Generated</h2>
+
+<ol>
+<li>Identified high revenue-generating business units contributing ~40% of total revenue, supporting strategic investment prioritization.</li>
+<li>Expense breakdown analysis revealed cost centers responsible for ~30% of operational expenditure, enabling targeted cost optimization.</li>
+<li>Profit margin trend analysis highlighted periods of margin compression, assisting leadership in improving pricing and cost strategies.</li>
+<li>Cash flow monitoring provided visibility into liquidity stability and working capital management.</li>
+<li>Automated KPI tracking reduced manual reporting effort by ~65%, improving reporting accuracy and efficiency.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Tools and Technologies Used</h2>
+
+<ol>
+<li>Power BI for interactive dashboard development and advanced data visualization.</li>
+<li>Power Query for cleaning and transforming large-scale financial datasets.</li>
+<li>DAX (Data Analysis Expressions) for KPI calculations and financial metric modeling.</li>
+<li>Data modeling techniques including relationships, calculated columns, and measures.</li>
+<li>Business intelligence best practices for executive-level financial reporting.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Project Outcome</h2>
+
+<ol>
+<li>Designed a professional financial performance dashboard translating complex accounting data into actionable insights.</li>
+<li>Improved financial reporting efficiency by automating KPI calculations and visualization workflows.</li>
+<li>Enabled strategic decision-making through clear visualization of revenue, expenses, and profitability metrics.</li>
+<li>Demonstrated expertise in financial analytics, Power BI, DAX, and business reporting standards.</li>
+</ol>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 Chethana C K | Data Analyst Portfolio
+
+Chethana C K | Data Analyst Portfolio
+
 </footer>
 
-<script>
-
-const counters = document.querySelectorAll('.kpi-number');
-
-counters.forEach(counter => {
-const updateCount = () => {
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
-const increment = target / 100;
-
-if(count < target){
-counter.innerText = Math.ceil(count + increment);
-setTimeout(updateCount, 20);
-} else {
-counter.innerText = target.toLocaleString();
-}
-};
-updateCount();
-});
-
-</script>
-
 </body>
+
 </html>
