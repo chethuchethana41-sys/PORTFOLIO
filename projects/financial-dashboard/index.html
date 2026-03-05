@@ -28,8 +28,6 @@ color:white;
 100%{background-position:0% 50%;}
 }
 
-/* NAVIGATION */
-
 nav {
 position:fixed;
 width:100%;
@@ -112,8 +110,8 @@ margin-bottom:8px;
 
 .button {
 display:inline-block;
-padding:14px 30px;
-margin-top:20px;
+padding:14px 28px;
+margin:15px 10px 0 0;
 background:#00e5ff;
 color:black;
 text-decoration:none;
@@ -132,6 +130,11 @@ width:100%;
 margin-top:25px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.button-container {
+text-align:center;
+margin-top:40px;
 }
 
 footer {
@@ -158,16 +161,30 @@ background:rgba(0,0,0,0.5);
 
 <h1>Financial Performance & Profitability Intelligence Dashboard</h1>
 
+<div class="button-container">
+
+<a class="button" href="../../index.html">
+← Portfolio Home
+</a>
+
+<a class="button" 
+href="https://github.com/chethuchethana41-sys/PORTFOLIO/tree/main/projects/financial-dashboard" 
+target="_blank">
+View on GitHub →
+</a>
+
+</div>
+
 <div id="overview" class="card">
 
 <h2>Project Overview</h2>
 
 <p>
-Designed to simulate a CFO-level financial analytics environment, this Power BI dashboard processes 1M+ financial records to uncover revenue concentration, margin risks, and operational inefficiencies.
+Designed to simulate a CFO-level financial analytics environment, this Power BI dashboard processes over 1,000,000 financial records to uncover revenue concentration, margin risks, and operational inefficiencies.
 </p>
 
 <p>
-The project demonstrates advanced KPI engineering, DAX modeling, and scalable financial reporting architecture aligned with enterprise business standards.
+The solution demonstrates advanced KPI engineering, optimized DAX calculations, star-schema modeling, and enterprise-level reporting architecture aligned with executive decision-making frameworks.
 </p>
 
 </div>
@@ -185,12 +202,12 @@ Records Processed
 
 <div class="kpi-box">
 <div class="kpi-number" data-target="35">0</div>
-% Revenue from Top Segment
+% Revenue Concentration Identified
 </div>
 
 <div class="kpi-box">
 <div class="kpi-number" data-target="18">0</div>
-% Margin Erosion Identified
+% Margin Erosion Detected
 </div>
 
 <div class="kpi-box">
@@ -215,8 +232,8 @@ X Faster Reporting
 <li>Power BI Enterprise Dashboard Development</li>
 <li>Star Schema Data Modeling</li>
 <li>Advanced DAX KPI Engineering</li>
-<li>Performance Optimization & Relationship Tuning</li>
-<li>Executive Drill-Through Financial Reporting</li>
+<li>Relationship Optimization & Performance Tuning</li>
+<li>Executive-Level Drill-Through Reporting</li>
 </ol>
 
 </div>
@@ -225,8 +242,8 @@ X Faster Reporting
 
 <h2>Dashboard Preview</h2>
 
-<img src="overview1.png">
-<img src="overview2.png">
+<img src="overview1.png" alt="Executive Financial Overview Dashboard">
+<img src="overview2.png" alt="Profitability and Margin Analysis Dashboard">
 
 </div>
 
@@ -235,22 +252,22 @@ X Faster Reporting
 <h2>Let’s Connect</h2>
 
 <p>
-Interested in collaborating or discussing data-driven financial analytics solutions?
+Interested in collaborating or discussing enterprise financial analytics solutions?
 </p>
 
-<a class="button" href="https://www.linkedin.com" target="_blank">Connect on LinkedIn</a>
+<a class="button" href="https://www.linkedin.com/in/chethana-ck-374429380/" target="_blank">
+Connect on LinkedIn
+</a>
 
 </div>
 
 </div>
 
 <footer>
-Chethana C K | Data Analyst Portfolio
+© 2026 Chethana C K | Data Analyst Portfolio
 </footer>
 
 <script>
-
-/* Animated KPI Counter */
 
 const counters = document.querySelectorAll('.kpi-number');
 
@@ -264,7 +281,7 @@ if(count < target){
 counter.innerText = Math.ceil(count + increment);
 setTimeout(updateCount, 20);
 } else {
-counter.innerText = target;
+counter.innerText = target.toLocaleString();
 }
 };
 updateCount();
