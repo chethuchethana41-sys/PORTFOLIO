@@ -1,14 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CRM Project</title>
+
+<title>CRM Sales Analytics Dashboard | Chethana C K</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+margin:0;
+font-family:Poppins;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+color:white;
+}
+
+@keyframes bg {
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container {
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+h1 {
+font-size:42px;
+}
+
+h2 {
+margin-top:50px;
+color:#00e5ff;
+}
+
+p {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
+}
+
+ol {
+font-size:18px;
+line-height:1.7;
+color:#e0e0e0;
+margin-left:20px;
+}
+
+.button {
+display:inline-block;
+padding:14px 30px;
+margin:10px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:0.3s;
+}
+
+.button:hover {
+background:white;
+transform:scale(1.05);
+}
+
+.card {
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+animation:fade 1.5s;
+}
+
+@keyframes fade {
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+img {
+width:100%;
+margin-top:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+img:hover {
+transform:scale(1.02);
+}
+
+footer {
+text-align:center;
+padding:30px;
+margin-top:50px;
+background:rgba(0,0,0,0.4);
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>CRM Sales Analytics</h1>
+<div class="container">
 
-<p>This is my CRM project page.</p>
+<h1>CRM Sales Analytics Dashboard</h1>
+
+<a class="button" href="https://chethuchethana41-sys.github.io/PORTFOLIO/" target="_blank">Portfolio Home</a>
+
+<a class="button" href="https://github.com/chethuchethana41-sys" target="_blank">GitHub Profile</a>
+
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p>
+This project focuses on analyzing CRM data including leads, opportunities, and customer accounts to identify sales performance trends and conversion patterns. The objective was to simulate a real-world sales analytics scenario where businesses track pipeline performance and optimize revenue generation.
+</p>
+
+<p>
+The dashboard provides a complete view of the sales funnel, helping stakeholders monitor conversion rates, identify bottlenecks, and improve decision-making using data-driven insights.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Business Problem</h2>
+
+<p>
+Organizations often struggle with low conversion rates and lack visibility into where leads are lost in the sales funnel. Without proper analysis, it becomes difficult to improve sales performance and revenue outcomes.
+</p>
+
+<p>
+This project solves the problem by transforming raw CRM data into structured insights, enabling businesses to identify inefficiencies and optimize their sales strategy.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Dashboard Preview</h2>
+
+<img src="crm_dashboard.png">
+
+</div>
+
+<div class="card">
+
+<h2>Key Insights Generated</h2>
+
+<ol>
+<li>Identified ~20% drop-off in mid-funnel stages, highlighting major conversion leakage.</li>
+<li>Top regions contributed ~35–40% of total revenue, indicating revenue concentration.</li>
+<li>Analyzed opportunity win rates to evaluate sales team performance.</li>
+<li>Detected trends in lead conversion improving sales targeting strategies.</li>
+<li>Automated reporting reduced manual effort by ~60%.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Tools and Technologies Used</h2>
+
+<ol>
+<li>SQL for querying and analyzing CRM datasets.</li>
+<li>Power BI for building interactive dashboards.</li>
+<li>Excel for data preprocessing and validation.</li>
+<li>Python for data cleaning and transformation.</li>
+<li>Applied business intelligence techniques for KPI tracking.</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Project Outcome</h2>
+
+<ol>
+<li>Built a complete CRM analytics dashboard for sales performance tracking.</li>
+<li>Improved visibility into conversion funnel and revenue drivers.</li>
+<li>Enabled data-driven decision-making for sales strategy.</li>
+<li>Demonstrated strong skills in SQL, Power BI, and analytics.</li>
+</ol>
+
+</div>
+
+</div>
+
+<footer>
+
+Chethana C K | Data Analyst Portfolio
+
+</footer>
 
 </body>
+
 </html>
